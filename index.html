@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muzaki Zaidan | Portofolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50 py-4">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-gradient">MZ</a>
+      <div class="space-x-6 hidden md:block">
+        <a href="#home" class="nav-link hover:text-purple-600 transition">Beranda</a>
+        <a href="#about" class="nav-link hover:text-purple-600 transition">Tentang</a>
+        <a href="#tools" class="nav-link hover:text-purple-600 transition">Tools</a>
+        <a href="#projects" class="nav-link hover:text-purple-600 transition">Proyek</a>
+        <a href="#contact" class="nav-link hover:text-purple-600 transition">Kontak</a>
+      </div>
+      <button id="menu-btn" class="block md:hidden text-2xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white mt-4 py-4 shadow-inner">
+      <div class="flex flex-col items-center space-y-3">
+        <a href="#home" class="nav-link hover:text-purple-600 transition">Beranda</a>
+        <a href="#about" class="nav-link hover:text-purple-600 transition">Tentang</a>
+        <a href="#tools" class="nav-link hover:text-purple-600 transition">Tools</a>
+        <a href="#projects" class="nav-link hover:text-purple-600 transition">Proyek</a>
+        <a href="#contact" class="nav-link hover:text-purple-600 transition">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Home) -->
+  <section id="home" class="min-h-screen flex items-center justify-center px-6 py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+    <div class="text-center max-w-3xl">
+      <div class="mb-6 inline-block p-1 bg-gradient-custom rounded-full">
+        <img src="https://ui-avatars.com/api/?background=667eea&color=fff&rounded=true&bold=true&size=120&name=Muzaki+Zaidan" alt="Muzaki Zaidan" class="w-32 h-32 rounded-full border-4 border-white shadow-lg">
+      </div>
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Halo! Saya <span class="text-gradient">Muzaki Zaidan</span></h1>
+      <p class="text-xl md:text-2xl text-gray-600 mb-6">Mahasiswa Sistem Komputer | Fresh Graduate | Tech Enthusiast</p>
+      <p class="text-gray-500 max-w-xl mx-auto mb-8">Membangun solusi teknologi yang inovatif dan fungsional. Saya percaya bahwa kode yang bersih dan desain yang humanis dapat menciptakan dampak positif.</p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="#projects" class="bg-gradient-custom text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition">Lihat Proyek</a>
+        <a href="#contact" class="border border-purple-600 text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-purple-50 transition">Hubungi Saya</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Section -->
+  <section id="about" class="py-20 px-6 bg-white">
+    <div class="container mx-auto max-w-5xl">
+      <h2 class="text-4xl font-bold text-center mb-12">Tentang <span class="text-gradient">Saya</span></h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-gray-700 leading-relaxed mb-4">Halo! Saya <strong>Muzaki Zaidan</strong>, seorang fresh graduate dari program studi Sistem Komputer. Saya memiliki ketertarikan besar pada dunia pengembangan perangkat lunak, Internet of Things (IoT), dan pengalaman pengguna.</p>
+          <p class="text-gray-700 leading-relaxed mb-4">Selama masa kuliah, saya aktif dalam berbagai proyek berbasis teknologi, mulai dari membangun website sederhana hingga merancang sistem embedded. Saya percaya bahwa teknologi terbaik adalah yang mampu memecahkan masalah nyata dengan cara yang elegan dan mudah diakses.</p>
+          <p class="text-gray-700 leading-relaxed">Saat ini saya fokus mengasah kemampuan di bidang <strong>front-end development, database, dan sistem terdistribusi</strong>. Saya siap berkontribusi dalam tim yang dinamis dan terus belajar hal-hal baru.</p>
+        </div>
+        <div class="bg-gradient-custom p-1 rounded-xl shadow-xl">
+          <div class="bg-white rounded-xl p-6">
+            <h3 class="text-xl font-bold mb-4">Informasi Singkat</h3>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3"><i class="fas fa-graduation-cap text-purple-600 w-5"></i> S1 Sistem Komputer - Universitas Pamulang Serang</li>
+              <li class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-purple-600 w-5"></i> Banten, Indonesia</li>
+              <li class="flex items-center gap-3"><i class="fas fa-laptop-code text-purple-600 w-5"></i> Fresh Graduate, siap kerja</li>
+              <li class="flex items-center gap-3"><i class="fas fa-heart text-purple-600 w-5"></i> Open Source & Tech Community</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section id="tools" class="py-20 px-6 bg-gray-50">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-4xl font-bold text-center mb-12">Tools yang <span class="text-gradient">Biasa Dipakai</span></h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6" id="tools-container">
+        <!-- Tools akan diisi oleh JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyek Section -->
+  <section id="projects" class="py-20 px-6 bg-white">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-4xl font-bold text-center mb-4">Daftar <span class="text-gradient">Proyek</span></h2>
+      <p class="text-center text-gray-500 mb-12">Beberapa proyek yang pernah saya kerjakan (studi kasus & tugas akhir)</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-container">
+        <!-- Projects akan diisi oleh JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="contact" class="py-20 px-6 bg-gray-50">
+    <div class="container mx-auto max-w-4xl text-center">
+      <h2 class="text-4xl font-bold mb-6">Hubungi <span class="text-gradient">Saya</span></h2>
+      <p class="text-gray-600 mb-10 max-w-xl mx-auto">Tertarik berkolaborasi atau punya proyek menarik? Jangan ragu untuk menghubungi saya!</p>
+      <div class="flex justify-center gap-6 flex-wrap mb-12">
+        <a href="mailto:muzakizaidan018@gmail.com" class="social-icon bg-white shadow-md rounded-full p-4 hover:shadow-xl transition"><i class="fas fa-envelope text-2xl text-purple-600"></i></a>
+        <a href="#" class="social-icon bg-white shadow-md rounded-full p-4 hover:shadow-xl transition"><i class="fab fa-linkedin text-2xl text-blue-700"></i></a>
+        <a href="#" class="social-icon bg-white shadow-md rounded-full p-4 hover:shadow-xl transition"><i class="fab fa-github text-2xl text-gray-800"></i></a>
+        <a href="#" class="social-icon bg-white shadow-md rounded-full p-4 hover:shadow-xl transition"><i class="fab fa-instagram text-2xl text-pink-500"></i></a>
+      </div>
+      <form id="contact-form" class="max-w-2xl mx-auto text-left space-y-4">
+        <div><input type="text" id="name" placeholder="Nama lengkap" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-purple-500"></div>
+        <div><input type="email" id="email" placeholder="Alamat email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-purple-500"></div>
+        <div><textarea id="message" rows="4" placeholder="Tulis pesan..." class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-purple-500"></textarea></div>
+        <button type="submit" class="bg-gradient-custom text-white px-6 py-3 rounded-lg font-semibold w-full hover:opacity-90 transition">Kirim Pesan</button>
+      </form>
+      <div id="form-message" class="mt-4 hidden"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8 text-center">
+    <p>&copy; 2025 Muzaki Zaidan - Mahasiswa Sistem Komputer Fresh Graduate. Dibuat dengan <i class="fas fa-heart text-red-500"></i> dan Tailwind CSS.</p>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
